@@ -1,3 +1,5 @@
+import json from '@rollup/plugin-json'
+
 // rollup.config.mjs
 export default {
   input: 'src/main.js',
@@ -5,4 +7,5 @@ export default {
     file: 'bundle.js',
     format: 'cjs',
   },
+  plugins: [json()],
 }
